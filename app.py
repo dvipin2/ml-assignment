@@ -9,7 +9,7 @@ import pickle # will see how it pans out, if not will use joblib for model loadi
 # a. Dataset upload option (CSV) [As streamlit free tier has limited capacity, upload only test data] [ 1 mark ]
 # b. Model selection dropdown (if multiple models) [ 1 mark ] i.e. this will be static, I'll provide it, will create template for this first.
 # c. Display of evaluation metrics [ 1 mark ]
-# d. Confusion matrix or classifi cation report [ 1 mark ]
+# d. Confusion matrix or classification report [ 1 mark ]
 
 # below is just test code, I built in a hurry, will evolve it on weekend, will add more features.
 # will add model loading and evaluation on the uploaded test data, 
@@ -31,7 +31,8 @@ if uploaded_file is not None:
     
     # b. Model selection
     st.header("2. Select Model")
-    models = ["Logistic Regression", "Random Forest", "SVM"]
+
+    models = ["Logistic Regression", "Decision Tree Classifier", "K-Nearest Neighbor Classifier", "Naive Bayes Classifier - Gaussian or Multinomial", "Ensemble Model - Random Forest", "Ensemble Model - XGBoost"]
     selected_model = st.selectbox("Choose a model:", models)
     
     # c. Evaluation metrics
