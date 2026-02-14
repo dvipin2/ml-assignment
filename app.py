@@ -35,9 +35,12 @@ if uploaded_file is not None:
     models = ["Logistic Regression", "Decision Tree Classifier", "K-Nearest Neighbor Classifier", "Naive Bayes Classifier - Gaussian or Multinomial", "Ensemble Model - Random Forest", "Ensemble Model - XGBoost"]
     selected_model = st.selectbox("Choose a model:", models)
     
+
     # c. Evaluation metrics
     st.header("3. Evaluation Metrics")
     if st.button("Evaluate Model"):
+        # for each model add metrics
+
         # Placeholder for actual model evaluation
         accuracy = 0.85
         precision = 0.83
