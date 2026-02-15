@@ -78,7 +78,7 @@ def plot_confusion_matrix(y_true, y_pred):
     plt.ylabel('Actual')
     plt.title('Confusion Matrix')
     plt.show()
-    st.pyplot(fig)
+    st.pyplot(fig, use_container_width=True)
 
 
 if uploaded_file is not None:
@@ -125,6 +125,14 @@ if uploaded_file is not None:
         
         plot_confusion_matrix(y_true=y_test, y_pred=y_pred)
         
-        st.text(classification_report(y_test, y_pred))
+        report_dict = classification_report(y_test, y_pred, output_dict=True)
+
+        report_df = DataFrame(report_dict).transpose()
+        # 3. Style it: highlight scores above 0.95 in green
+        def highlight_high_scores(s):
+            return ['background-color: #90EE90' if (isinstance(v, float) and v > 0.95) else '' for v in s]
+
+        st.subheader("Interactive Classification Report")
+        st.dataframe(report_df.style.apply(highlight_high_scores, axis=1).format(precision=2))
 
 # streamlit run app.py
