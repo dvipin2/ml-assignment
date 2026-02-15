@@ -1,4 +1,4 @@
-# Problem statement
+## Problem statement
 Implement binary classification models for classifying Breast Cancer dataset as Benign vs Malignant. This Project includes
 - Python Notebook which classifies the problem statement using 6 models and saves the related model artifacts
 - Evaluates the result corresponding to each model
@@ -7,7 +7,44 @@ Implement binary classification models for classifying Breast Cancer dataset as 
 ## Dataset Description
 This dataset contains the Diagnostic Wisconsin Breast Cancer Database. Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass, describing characteristics of cell nuclei present in the image. Sample images are available at http://www.cs.wisc.edu/~street/images/
 
-## Models Used
+dataset Fields:
+- mean radius
+- mean texture
+- mean perimeter
+- mean area
+- mean smoothness
+- mean compactness
+- mean concavity
+- mean concave points
+- mean symmetry
+- mean fractal dimension
+- radius error
+- texture error
+- perimeter error
+- area error',
+- smoothness error
+- compactness error
+- concavity error
+- concave points error
+- symmetry error
+- fractal dimension error
+- worst radius
+- worst texture
+- worst perimeter
+- worst area
+- worst smoothness
+- worst compactness
+- worst concavity
+- worst concave points
+- worst symmetry
+- worst fractal dimension
+- target  - output label of the dataset
+
+value count for output
+- 1:  357
+- 0:  212
+
+## Models Used Evaluation
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 |---|---|---|---|---|---|---|
