@@ -1,5 +1,8 @@
 # Problem statement
-Implement binary classification models for classifying Breast Cancer dataset as Benign vs Malignant
+Implement binary classification models for classifying Breast Cancer dataset as Benign vs Malignant. This Project includes
+- Python Notebook which classifies the problem statement using 6 models and saves the related model artifacts
+- Evaluates the result corresponding to each model
+- Also include Streamlit App for Model testing and accuracy.
 
 ## Dataset Description
 This dataset contains the Diagnostic Wisconsin Breast Cancer Database. Features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass, describing characteristics of cell nuclei present in the image. Sample images are available at http://www.cs.wisc.edu/~street/images/
